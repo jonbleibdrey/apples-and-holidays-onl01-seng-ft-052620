@@ -65,11 +65,11 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |key, val|
-   xy = ""
-    xy += "#{key.to_s.capitalize}:"
-    yz = ""
+   output = ""
+    output += "#{key.to_s.capitalize}:"
+    output2 = ""
     val.each do |keys, vals|
-      yz += "#{keys}:"
+      output2 += "#{keys}:"
     vals.each{|x| yz << "#{x.to_s}" }
   end
  end
