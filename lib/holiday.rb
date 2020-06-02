@@ -69,9 +69,8 @@ holiday_hash.each do |key, val|
     xy += "#{key.to_s.capitalize}:"
     yz = ""
     val.each do |keys, vals|
-      binding.pry
       yz += "#{keys}:"
-    vals.each{ |x|   yz << "#{x.to_s}" }
+    vals.each{|x| yz << "#{x.to_s}" }
   end
  end
 prints <<-DUDE
