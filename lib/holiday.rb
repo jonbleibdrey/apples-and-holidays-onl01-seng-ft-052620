@@ -66,10 +66,10 @@ end
 def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |key, val|
    xy = ""
-   binding.pry
     xy += "#{key.to_s.capitalize}:"
     yz = ""
     val.each do |keys, vals|
+      binding.pry
       yz += "#{keys}:"
     vals.each{ |x|   yz << "#{x.to_s}" }
   end
