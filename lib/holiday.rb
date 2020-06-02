@@ -86,12 +86,22 @@ end
   # etc.
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash[seasons]
-  binding.pry
+   holiday_hash.collect do |season, holidays|
+    holidays.collect do |holidays, supply|
+      if supply.include?("BBQ")
+        holidays
+      end
+    end
+  end.flatten.compact
+end
+ 
+ 
+ 
+ 
+  # holiday_hash[seasons]
+  # binding.pry
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
-end
 
 
 
