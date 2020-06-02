@@ -86,15 +86,7 @@ end
   # etc.
 
 def all_holidays_with_bbq(holiday_hash)
-   holiday_hash.collect do |season, holidays|
-    holidays.collect do |holidays, supply|
-      if supply.include?("BBQ")
-        holidays
-      end
-    end
-  end.flatten.compact
-end
- 
+ new_array
  
  
  
