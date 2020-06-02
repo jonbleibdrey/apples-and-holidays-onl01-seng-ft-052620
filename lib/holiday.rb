@@ -64,8 +64,8 @@ end
 # return an array of all of the supplies that are used in the winter season
 
 def all_supplies_in_holidays(holiday_hash)
- holiday_hash[:winter]
- binding.pry
+# holiday_hash[:winter]
+# binding.pry
  
   #holiday_supplies[:summer][:fourth_of_july][1]
 end
