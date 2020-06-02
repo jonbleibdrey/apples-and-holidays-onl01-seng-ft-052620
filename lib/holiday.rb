@@ -74,8 +74,6 @@ holiday_hash.each do |key, val|
   end
  end
 print <<-DUDE
-#{xy}
-      #{yz}
 DUDE
 end
 
