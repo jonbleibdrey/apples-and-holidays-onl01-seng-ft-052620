@@ -64,7 +64,7 @@ end
 # return an array of all of the supplies that are used in the winter season
 
 def all_supplies_in_holidays(holiday_hash)
-puts "#{seasons.to_s.capitalize}:"
+puts "#{season.to_s.capitalize}:"
     holiday.each do |name, supplies|
       capitalized_name = name.to_s.split('_').each do |word|
         word.capitalize!
