@@ -71,14 +71,13 @@ holiday_hash.each do |key, val|
     val.each do |keys, vals|
       yz += "#{keys}:"
     vals.each{ |x|   yz << "#{x.to_s}" }
-    #print xy
-    #print yz
-
+  end
  end
 print <<-DUDE
 #{xy}
       #{yz}
 DUDE
+end
 end
 
  # iterate through holiday_hash and print items such that your readout resembles:
