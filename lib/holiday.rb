@@ -73,7 +73,7 @@ holiday_hash.each do |key, val|
     vals.each{ |x|   yz << "#{x.to_s}" }
   end
  end
-print <<-DUDE
+puts <<-DUDE
 DUDE
 end
 
