@@ -70,7 +70,7 @@ holiday_hash.each do |key, val|
     output2 = ""
     val.each do |keys, vals|
       output2 += "#{keys}:"
-    vals.each{|x| yz << "#{x.to_s}" }
+    vals.each{|x| output2 << "#{x.to_s}" }
   end
  end
 end
