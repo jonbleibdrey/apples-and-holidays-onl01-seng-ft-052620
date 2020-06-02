@@ -64,10 +64,21 @@ end
 # return an array of all of the supplies that are used in the winter season
 
 def all_supplies_in_holidays(holiday_hash)
-# holiday_hash[:winter]
-# binding.pry
- 
-  #holiday_supplies[:summer][:fourth_of_july][1]
+holiday_hash.each do |key, val|
+   xy = ""
+    xy += "#{key.to_s.capitalize}:"
+    yz = ""
+    val.each do |keys, vals|
+      yz += "#{keys}:"
+    vals.each{ |x|   yz << "#{x.to_s}" }
+    #print xy
+    #print yz
+
+ end
+print <<-DUDE
+#{xy}
+      #{yz}
+DUDE
 end
 
  # iterate through holiday_hash and print items such that your readout resembles:
